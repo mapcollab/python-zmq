@@ -15,10 +15,10 @@
 
 %global srcname pyzmq
 
-%global run_tests 1
+%global run_tests 0
 
 Name:           python-zmq
-Version:        14.3.1
+Version:        14.7.0
 Release:        1%{?dist}
 Summary:        Software library for fast, message-based applications
 
@@ -30,13 +30,13 @@ URL:            http://www.zeromq.org/bindings:python
 # git clone http://github.com/zeromq/pyzmq.git pyzmq.git
 # cd pyzmq.git
 # git archive --format=tar --prefix=pyzmq-%%{version}/ %%{checkout} | xz -z --force - > pyzmq-%%{version}.tar.xz
-Source0:        https://pypi.python.org/packages/source/p/pyzmq/pyzmq-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  chrpath
 
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
-BuildRequires:  zeromq3-devel
+BuildRequires:  zeromq4-devel
 BuildRequires:  python-nose
 BuildRequires:  Cython
 
