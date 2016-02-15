@@ -110,7 +110,7 @@ This package contains the testsuite for the python bindings.
 
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{name}-%{version}
 
 # remove bundled libraries
 rm -rf bundled
