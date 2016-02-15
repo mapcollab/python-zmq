@@ -19,7 +19,7 @@
 
 Name:           python-zmq
 Version:        14.7.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Software library for fast, message-based applications
 
 Group:          Development/Libraries
@@ -218,6 +218,11 @@ chrpath --delete %{buildroot}%{python_sitearch}%{RPATH}/*.so
 
 
 %changelog
+* Mon Feb 15 2016 Tomasz Rostanski <tomasz.rostanski@thalesgroup.com> 14.7.0-2
+- python-zmq.spec: fix source package name (tomasz.rostanski@thalesgroup.com)
+- Automatic commit of package [python-zmq] release [14.7.0-1].
+  (tomasz.rostanski@thalesgroup.com)
+
 * Mon Feb 15 2016 Tomasz Rostanski <tomasz.rostanski@thalesgroup.com> 14.7.0-1
 - new package built with tito
 
