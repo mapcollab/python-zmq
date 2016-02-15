@@ -218,6 +218,9 @@ chrpath --delete %{buildroot}%{python_sitearch}%{RPATH}/*.so
 
 
 %changelog
+* Mon Feb 15 2016 Tomasz Rostanski <tomasz.rostanski@thalesgroup.com> 14.7.0-1
+- new package built with tito
+
 * Wed Aug 27 2014 Thomas Spura <tomspur@fedoraproject.org> - 14.3.1-1
 - update to 14.3.1
 
